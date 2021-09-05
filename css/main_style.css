@@ -20,7 +20,13 @@ h1 {
 }
 
 #body-container {
-
+  background-color: #ffffbf;
+  max-width: 1000px;
+  margin: auto;
+  height: 100vh;
+  border: 2px solid #ffffbf;
+  border-radius: 25px;
+  overflow: hidden;
 }
 
 #header {
