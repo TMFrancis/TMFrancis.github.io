@@ -34,11 +34,12 @@ h1 {
 }
 
 #profile-picture {
-
+  float: left;
 }
 
 #welcome-text {
-
+  padding-top: 25px;
+  font-size: 25px;
 }
 
 #research-interests {
