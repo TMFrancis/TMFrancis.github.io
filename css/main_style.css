@@ -21,30 +21,30 @@ h1 {                            /* h1 used in header */
 
 #body-container {
   background-color: #ffffbf;    /* set background color to off white */
-  max-width: 1000px;
-  margin: auto;
-  height: 100vh;
-  border: 2px solid #ffffbf;
-  border-radius: 25px;
-  overflow: hidden;
+  max-width: 1000px;            /* set body width to a hard value */
+  margin: auto;                 /* margin: auto; centers body
+  height: 100vh;                /* sets body height to 100% of viewport 8/
+  border: 2px solid #ffffbf;    /* sets narrow border to off white */
+  border-radius: 25px;          /* rounds edges of border */
+  overflow: hidden;             /* hides content that does not fit in body */
 }
 
 #header {
-  background-color: #2c7bb6;
+  background-color: #2c7bb6;     /* sets background of header to blue */
 }
 
 #profile-picture {
-  float: left;
+  float: left;                  /* positions profile pic to the left */
 }
 
-#welcome-text {
-  padding-top: 25px;
-  font-size: 25px;
+#welcome-text {                 /* welcome-text is 1st block right of profile */
+  padding-top: 25px;            /* provides white space above welcome-text */
+  font-size: 25px;              /* sets welcome-text text size */
 }
 
-#research-interests {
-  text-align: left;
-  font-size: 25px;
-  position: relative;
-  left: 120px;
+#research-interests {           /* 2nd block to the right of profile pic */
+  text-align: left;             /* prevents staggered list elements */
+  font-size: 25px;              /* matches welcome-text text size */
+  position: relative;           /* prevents overlap of elements */
+  left: 120px;                  /* 120px  - aligns text vert with welcome-text */
 }
