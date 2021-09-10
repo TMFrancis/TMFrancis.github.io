@@ -13,9 +13,9 @@ body {
   text-align: center;           /* center text */
 }
 
-h1 {
-  color: #ffffbf;
-  padding: 5px;
+h1 {                            /* h1 used in header */
+  color: #ffffbf;               /* set text color to off white */
+  padding: 0px;                 /* prevents text from touching border */
   margin: 0;
 }
 
