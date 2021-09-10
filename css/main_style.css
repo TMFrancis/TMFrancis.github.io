@@ -16,11 +16,11 @@ body {
 h1 {                            /* h1 used in header */
   color: #ffffbf;               /* set text color to off white */
   padding: 5px;                 /* expands the vertical size of header */
-  margin: 10;
+  margin: 0;                    /* positions header to directly abut body */
 }
 
 #body-container {
-  background-color: #ffffbf;
+  background-color: #ffffbf;    /* set background color to off white */
   max-width: 1000px;
   margin: auto;
   height: 100vh;
@@ -46,5 +46,5 @@ h1 {                            /* h1 used in header */
   text-align: left;
   font-size: 25px;
   position: relative;
-  left: 50px;
+  left: 120px;
 }
