@@ -15,8 +15,8 @@ body {
 
 h1 {                            /* h1 used in header */
   color: #ffffbf;               /* set text color to off white */
-  padding: 0px;                 /* prevents text from touching border */
-  margin: 0;
+  padding: 5px;                 /* expands the vertical size of header */
+  margin: 10;
 }
 
 #body-container {
