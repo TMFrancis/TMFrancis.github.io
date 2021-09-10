@@ -22,8 +22,8 @@ h1 {                            /* h1 used in header */
 #body-container {
   background-color: #ffffbf;    /* set background color to off white */
   max-width: 1000px;            /* set body width to a hard value */
-  margin: auto;                 /* margin: auto; centers body
-  height: 100vh;                /* sets body height to 100% of viewport 8/
+  margin: auto;                 /* margin: auto; centers body */
+  height: 100vh;                /* sets body height to 100% of viewport */
   border: 2px solid #ffffbf;    /* sets narrow border to off white */
   border-radius: 25px;          /* rounds edges of border */
   overflow: hidden;             /* hides content that does not fit in body */
