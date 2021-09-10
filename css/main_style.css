@@ -8,9 +8,9 @@ Colorbline safe color palatte from colorbrewer2.org.
 */
 
 body {
-  background-color: #abd9e9;
-  color: #2c7bb6;
-  text-align: center;
+  background-color: #abd9e9;    /* set background color to light blue */
+  color: #2c7bb6;               /* set text color to blue */
+  text-align: center;           /* center text */
 }
 
 h1 {
