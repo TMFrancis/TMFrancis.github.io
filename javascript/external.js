@@ -17,9 +17,24 @@ sign = prompt();            // open the blank prompt window
 sign = window.prompt('Are you feeling lucky');  // open w prompt text
 sign = window.prompt('Are you feeling lucky', 'sure'); // open prompt w text
                                                        // and default value
-*/
+
 x = 22;
 const y = 33;
 document.writeln(x + y);
 document.writeln("<br>");
 document.writeln(x += 33);
+*/
+document.writeln("<button onclick='condition()'>Conditional Test</button>")
+
+function condition()
+{
+  x = confirm("Are you sure you want to proceed?");
+  if(x)
+  {
+    document.writeln("You chose Okay!");
+  }
+  else
+  {
+    document.writeln("You chose Cancel!");
+  }
+}
