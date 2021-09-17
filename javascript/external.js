@@ -38,9 +38,16 @@ function condition()
     document.writeln("You chose Cancel!");
   }
 }
-*/
+
 arr = ["Joe", "April", "Mark", "Sara"];
+*/
+
+arr = ["Quantitative Methods",
+        "Remote Sensing",
+        "Climate Change",
+        "Sustainable Transport",
+        "Sustainable Energy"];
 for (var i=0; i < arr.length; i++)
 {
-  document.writeln(arr[i],"<br>");
+  document.writeln("<li>",arr[i],"</li>");
 }
