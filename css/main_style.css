@@ -20,6 +20,13 @@ body {
   text-align: center;
 }
 
+/* ul sets styling for ordered list elements */
+ol {
+  /* hoping to indent ordered list elements -
+  not working; the research-interests selector may be overriding */
+  padding-left: 20px;
+}
+
 /* h1 used in header */
 h1 {
   /* set text color to off white */
