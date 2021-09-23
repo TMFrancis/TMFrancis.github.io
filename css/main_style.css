@@ -79,3 +79,11 @@ h1 {
   /* 120px  - aligns text vert with welcome-text */
   left: 120px;
 }
+
+/* copyright update for Lab 3 */
+#copyright {
+  position: absolute;
+  width: 1000px;
+  text-align: center;
+  bottom: 20px;
+}
