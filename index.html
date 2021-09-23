@@ -9,13 +9,16 @@
   <body>
     <div id="body-container">
       <div id="header">
-        <h1>Hello, my name is Tom Francis!</h1>
+        <script type = "text/javascript">
+          var vistorName = window.prompt('Please enter your name', 'Lucky Devil');
+          document.writeln("<h1>Hello " + vistorName + "!</h1>");
+        </script>
       </div>
       <div id="profile-picture">
         <img src=images/profile-picture.jpg with=500px height=500px />
       </div>
       <div id="welcome-text">
-        Wecome to my webpage.<br>
+        My name is Tom Francis.<br>
         I am a student in the
         <a href="https://www.clarku.edu/schools/idce/">IDCE Department</a> at
         <a href="https://www.clarku.edu/">Clark University.</a><br>
@@ -24,7 +27,7 @@
       <div id="research-interests">
         <h3>Research Interests:</h3>
         <ol>
-          <script src="javascript/external.js"></script>
+          <script src = "javascript/researchTable.js"></script>
         </ol>
       </div>
     </div>

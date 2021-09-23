@@ -41,13 +41,3 @@ function condition()
 
 arr = ["Joe", "April", "Mark", "Sara"];
 */
-
-arr = ["Quantitative Methods",
-        "Remote Sensing",
-        "Climate Change",
-        "Sustainable Transport",
-        "Sustainable Energy"];
-for (var i=0; i < arr.length; i++)
-{
-  document.writeln("<li>",arr[i],"</li>");
-}
