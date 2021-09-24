@@ -83,8 +83,11 @@ h1 {
   font-size: 25px;
   /* prevents overlap of elements */
   position: relative;
-  /* 120px  - aligns text vert with welcome-text */
-  left: 120px;
+  /* 120px  - aligns text horizontally with welcome-text ;
+  did not work with Safari*/
+  /* left: 120px; */
+  /* aligns test with welcome-text - works w Chrome & Safari */
+  padding-left: 600px;
 }
 
 /* copyright update for Lab 3 */
