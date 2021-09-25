@@ -65,6 +65,8 @@ h1 {
 #profile-picture {
   /* positions profile pic to the left */
   float: left;
+  padding-left: 25px;
+  padding-top: 35px;
 }
 
 /* welcome-text is the unique selector for the 1st block right of profile */
