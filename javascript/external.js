@@ -30,9 +30,16 @@ function webmap_table()
     document.write("<tr>");
     for (var column=0; column < webmaps[0].length; column++)
     {
-      document.write("<td>" + webmaps[row][column] + "</td>");
+      if(row%2 > 0)
+        {
+          document.write("<td style='background-color: #ffffe0'>" + webmaps[row][column] + "</td>");
+        } else {
+          document.write("<td style='background-color: #ffff8a'>" + webmaps[row][column] + "</td>");
+        }
     }
     document.write("</tr>");
   }
   document.write("</table>");
 }
+
+style="background-color:#dcdedc"
