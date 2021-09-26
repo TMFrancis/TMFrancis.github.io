@@ -18,6 +18,8 @@ body {
   color: #2c7bb6;
   /* center text */
   text-align: center;
+  /* sets body height to 100% of viewport */
+  height: 100vh;
 }
 
 /* ul sets styling for ordered list elements */
@@ -46,7 +48,7 @@ h1 {
   /* margin: auto; centers body */
   margin: auto;
   /* sets body height to 100% of viewport */
-  height: 100vh;
+  height: 90vh;
   /* sets narrow border to off white */
   border: 2px solid #ffffbf;
   /* rounds edges of border */
