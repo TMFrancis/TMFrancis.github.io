@@ -34,12 +34,19 @@
 
       <div id="webmap-reviews">
         <h3>Webmap Reviews</h3>
-        <script>document.write(webmap_table())</script>
+        <script>webmap_table()</script>
       </div>
-    </div>
-    <!--  per graduate student requirement -->
-    <div id="copyright">
-      <script src = "javascript/copyright.js"></script>
-    </div>
-  </body>
+
+      <div id="area_calc">
+        <form target="_self">
+          <h3 style="text-align: center">Input the length and width of a rectangle to calculate the area</h3>
+          <label for="rec_len"> Enter Length of Rectangle (0-100):</label>
+          <input type="number" id="rec_len" name="rec_len" min="0" max="100"><br><br>
+          <label for="rec_wid">Enter Width of Rectangle (0-100): </label>
+          <input type="number" id="rec_wid" name="rec_wid" min="0" max="100"><br><br>
+          <button type="button" onclick="calculate_area()">Calculate Area</button>
+          <p id="demo" style="text-align: right">The area of the rectangle is:</p>
+          <script>calculate_area()</script>
+        </form>
+      </div>
 </html>

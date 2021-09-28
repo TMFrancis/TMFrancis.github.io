@@ -39,6 +39,19 @@ h1 {
   margin: 0;
 }
 
+form {
+  border: solid;
+  border-width: 2px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+label {
+  display: inline-block;
+  width: 250px;
+  text-align: right;
+}
+
 /* body-content is unique selector for most of the webpage content */
 #body-container {
   /* set background color to off white */
@@ -106,4 +119,9 @@ h1 {
   text-align: left;
   font-size: 15px;
   postion: relative;
+}
+
+#area_calc {
+  position: relative;
+  text-align: left;
 }

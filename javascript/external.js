@@ -1,3 +1,4 @@
+// webmaps variable defines the data used by webmap_table function
 var webmaps =
   [
     ["Strava Global Heat Map",
@@ -22,6 +23,7 @@ message = "<h1>Hello, welcome to my webpage " + user_name + "!</h1>";
 return message
 }
 
+// the function which creates a table using webmaps variable declared above
 function webmap_table()
 {
   document.write("<table width=100%>");
@@ -42,4 +44,10 @@ function webmap_table()
   document.write("</table>");
 }
 
-style="background-color:#dcdedc"
+// function to calculate area of a rectangle used in <form>
+function calculate_area(){
+  var l = document.getElementById("rec_len").value;
+  var w = document.getElementById("rec_wid").value;
+  area = w * l;
+  let answer = document.getElementById("demo").innerHTML = "The area of the rectangle is: " + area;
+  }
