@@ -40,7 +40,10 @@ h1 {
 }
 
 form {
+  position: relative;
+  top: 50px;
   border: solid;
+  height: 150px;
   border-width: 2px;
   padding-left: 25px;
   padding-right: 25px;
@@ -50,6 +53,12 @@ label {
   display: inline-block;
   width: 250px;
   text-align: right;
+}
+
+button {
+  position: relative;
+  left: 350px;
+  bottom: 39px;
 }
 
 /* body-content is unique selector for most of the webpage content */
@@ -110,18 +119,25 @@ label {
 /* copyright update for Lab 3 */
 #copyright {
   position: absolute;
-  width: 100vw;        /* changed from 1000px to center text on page */
-  text-align: center;
   bottom: 20px;
+  width: 50vw;
+  text-align: center;
 }
 
 #webmap-reviews {
   text-align: left;
   font-size: 15px;
-  postion: relative;
+  position: relative;
 }
 
 #area_calc {
   position: relative;
   text-align: left;
+}
+
+#demo {
+  position: relative;
+  text-align: right;
+  bottom: 100px;
+  right: 40px;
 }
