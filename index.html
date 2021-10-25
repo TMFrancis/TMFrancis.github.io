@@ -1,6 +1,18 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+     crossorigin="">
+   </script>
+
+    <script src = "javascript/secret_keys.js"></script>
     <title>Tom Francis</title>
     <!-- All styling for this HTML document are contained in this external css
     file -->
@@ -23,7 +35,6 @@
         I am a student in the
         <a href="https://www.clarku.edu/schools/idce/">IDCE Department</a> at
         <a href="https://www.clarku.edu/">Clark University.</a><br>
-        <a href="Leaflet_Intro3.html" target="_blank">Here is a web map I made</a><br>
       </div>
 
       <div id="research-interests">
@@ -37,7 +48,7 @@
         <h3>Webmap Reviews</h3>
         <script>webmap_table()</script>
       </div>
-
+      <!-- calculate area of a rectangle exercise
       <div id="area_calc">
         <form target="_self">
           <h3 style="text-align: center">Input the length and width of a rectangle to calculate the area</h3>
@@ -49,8 +60,19 @@
           <p id="demo">The area of the rectangle is:</p>
           <script>calculate_area()</script>
         </form>
+      </div>  -->
+      <h3>My First Webmap</h3>
+      <div id="mapid" style="width: 600px; height: 400px; margin: auto;">
+        <script>
+          var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+            L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+              maxZoom: 18,
+              id: 'mapbox/streets-v11',
+              accessToken: mapbox_access_token,
+            }).addTo(mymap);
+        </script>
       </div>
-      
+
       <footer id="copyright">
           <script src = "javascript/copyright.js"></script>
       </footer>
