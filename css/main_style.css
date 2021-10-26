@@ -106,7 +106,7 @@ button {
   /* prevents staggered list elements */
   text-align: left;
   /* matches welcome-text text size */
-  font-size: 25px;
+  font-size: 20px;
   /* prevents overlap of elements */
   position: relative;
   /* 120px  - aligns text horizontally with welcome-text ;
