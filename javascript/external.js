@@ -11,6 +11,7 @@ var webmaps =
     ]
   ];
 
+// welcome prompt that asks user for name upon loading index.html
 function welcome()
 {
 let a = "Please enter your name.";

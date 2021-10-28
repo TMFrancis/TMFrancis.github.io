@@ -16,10 +16,14 @@ body {
   background-color: #abd9e9;
   /* set text color to blue */
   color: #2c7bb6;
-  /* center text */
   text-align: center;
   /* sets body height to 100% of viewport */
   height: 100vh;
+}
+
+figcaption {
+  font-size: 12px;
+  font-style: italic;
 }
 
 /* ul sets styling for ordered list elements */
@@ -98,7 +102,7 @@ button {
   /* provides 'white space' above welcome-text */
   padding-top: 25px;
   /* sets welcome-text text size */
-  font-size: 25px;
+  font-size: 20px;
 }
 
 /* unique selector for the 2nd block to the right of profile pic */
@@ -106,7 +110,7 @@ button {
   /* prevents staggered list elements */
   text-align: left;
   /* matches welcome-text text size */
-  font-size: 20px;
+  font-size: 15px;
   /* prevents overlap of elements */
   position: relative;
   /* 120px  - aligns text horizontally with welcome-text ;
@@ -120,7 +124,7 @@ button {
 #copyright {
   position: absolute;
   bottom: 20px;
-  width: 50vw;
+  width: 70vw;
   text-align: center;
 }
 
