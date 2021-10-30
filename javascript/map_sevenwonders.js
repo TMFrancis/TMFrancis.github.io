@@ -115,5 +115,5 @@ for (var i=0; i < sevenWonders.length; i++) {
 
 // recenter map after viewing popup
 map.on('popupclose', function() {
-  map.setView(bellyButton, 2);
+  map.setView(bellyButton, 1);
 });
