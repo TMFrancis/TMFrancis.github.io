@@ -122,8 +122,8 @@
         var markerOptions = {
           title: nameLong,
           icon: uniqIcon,
-          iconAnchor: [22, 94],
-          popupAnchor: [-3, -76]
+          iconAnchor: [0, 0],
+          popupAnchor: [0, 0]
         };
       
         // add marker
@@ -131,6 +131,11 @@
          .bindPopup(content)
          .addTo(map);
       };
+
+      // recenter map
+      map.on('popupclose', function() {
+        map.setView(bellyButton, 2);
+      });
 
               
 

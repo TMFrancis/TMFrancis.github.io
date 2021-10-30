@@ -103,8 +103,8 @@ for (var i=0; i < sevenWonders.length; i++) {
   var markerOptions = {
     title: nameLong,
     icon: uniqIcon,
-    iconAnchor: [22, 94],
-    popupAnchor: [-3, -76]
+    iconAnchor: [0, 0],
+    popupAnchor: [0, 0]
   };
 
   // add marker
@@ -112,3 +112,8 @@ for (var i=0; i < sevenWonders.length; i++) {
    .bindPopup(content)
    .addTo(map);
 };
+
+// recenter map after viewing popup
+map.on('popupclose', function() {
+  map.setView(bellyButton, 2);
+});
