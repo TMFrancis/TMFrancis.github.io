@@ -3,15 +3,29 @@
   <head>
     <title>Seven Wonders Leaflet</title>
     <style></style>
-
+      <!-- load leaflet stylesheet and js -->
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
      crossorigin=""/>
-
       <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
        crossorigin="">
       </script>
+
+      <!-- load Stamen js plugin #1-->
+      <script type="text/javascript" src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js?v1.3.0"></script>
+
+      <!-- load BetterScale css & js plugin #2 -->
+      <link rel="stylesheet" type="text/css" href="css/L.control.BetterScale.css">
+      <script src = "javascript/L.control.BetterScale.js"></script>
+      
+      <!-- load SnakeAnim js plugin #3 -->  
+      <script src = "javascript/L.Polyline.SnakeAnim.js"></script>
+
+      <!-- load control credits css & js plugin #4 -->  
+      <link rel="stylesheet" type="text/css" href="css/leaflet-control-credits.css">
+      <script src = "javascript/leaflet-control-credits.js"></script>    
+
 
   </head>
   <body>
@@ -97,10 +111,39 @@
       const bellyButton = { lat: 10.26, lng: 5.5 };  // commonly used center of world map
 
       var map = L.map('mapid').setView(bellyButton, 2);
-                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                  maxZoom: 19,
-                  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain-background/{z}/{x}/{y}{r}.{ext}', {
+                  attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                  subdomains: 'abcd',
+                  minZoom: 0,
+                  maxZoom: 18,
+                  ext: 'png'
                 }).addTo(map);
+
+      // add BetterScale plugin #2
+      scale = new L.Control.BetterScale().addTo(map);
+
+      // add SnakeAnim plugin # 3
+      var route = [[40.431908, 116.570374],
+                  [27.173891, 78.042068],
+                  [30.328960, 35.444832],
+                  [41.890209, 12.492373],
+                  [-22.951871, -43.21118],
+                  [-13.163068, -72.545128],
+                  [20.684285, -88.567783]];
+
+      for (var i = 0, latlngs = [], len = route.length; i < len; i++) {
+        latlngs.push(new L.LatLng(route[i][0], route[i][1]));
+      };
+
+      var path = L.polyline(latlngs, {snakingSpeed: 100});     
+      path.addTo(map).snakeIn();
+
+      // add control credits plugin #4
+      var credctrl = L.controlCredits({
+          image: "images/head.png",
+          link: "https://thomasmfrancis.weebly.com/",
+          text: "maNglED CoDE<br/>by TMFrancis"
+      }).addTo(map);
 
       for (var i=0; i < sevenWonders.length; i++) {
         // create variables for each Wonder
@@ -116,14 +159,16 @@
           info + "</div>" 
 
         var uniqIcon = L.icon({
-          iconUrl: pin
+          iconUrl: pin,
+          iconSize: [30,30],
+          iconAnchor: [20, 20]
         });
 
         var markerOptions = {
           title: nameLong,
           icon: uniqIcon,
-          iconAnchor: [0, 0],
-          popupAnchor: [0, 0]
+          iconAnchor: [0, 0],   //can't get this to work
+          popupAnchor: [0, 0]   //or this
         };
       
         // add marker

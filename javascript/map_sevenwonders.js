@@ -97,14 +97,16 @@ for (var i=0; i < sevenWonders.length; i++) {
     info + "</div>"
 
   var uniqIcon = L.icon({
-    iconUrl: pin
+    iconUrl: pin,
+    iconSize: [30,30],
+    iconAnchor: [20, 20]
   });
 
   var markerOptions = {
     title: nameLong,
     icon: uniqIcon,
-    iconAnchor: [0, 0],
-    popupAnchor: [0, 0]
+    iconAnchor: [0, 0],   //can't get this to work
+    popupAnchor: [0, 0]   //or this
   };
 
   // add marker
