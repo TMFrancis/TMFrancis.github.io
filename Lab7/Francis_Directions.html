@@ -1,0 +1,86 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Lab 7: Directions Widget</title>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.21/esri/themes/light/main.css" />
+  <script src="https://js.arcgis.com/4.21/"></script>
+  // padding stylesheet required for directions widget
+  <link rel="stylesheet" type="text/css" href="../css/directions.css">
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+
+  <script>
+      require([
+        "esri/Map",
+        "esri/views/MapView",
+        "esri/widgets/Directions",          //widget
+        "esri/symbols/SimpleMarkerSymbol",  //symbols
+        "esri/config"
+      ], function (Map, MapView, Directions, SympleMarkerSymbol, esriConfig) {
+        // An authorization string used to access the basemap, geocoding and routing services
+        esriConfig.apiKey = "AAPK873ce78114b445028d46dd3b006206391X8iH6v9sB8ISYR-dc_uh5YzDmWsWBznuBZaYJNYvzcmQeLcfQIY28sVsyaXyEGw";
+
+        const map = new Map({
+          basemap: "dark-gray-vector"
+        });
+
+        const view = new MapView({
+          zoom: 14,
+          center: [-71.82, 42.25],  //center on Clark University
+          container: "viewDiv",
+          map: map
+        });
+
+        // define route routeSymbol
+        var symbolRoute = {
+          type: "simple-line",
+          color: "lime",
+          width: "10px",
+          style: "short-dot"
+        };
+
+        // define stop stopSymbols
+        var symbolStop = {
+          type: "simple-marker",
+          style: "square",
+          color: "lime",
+          size: "15px",
+          outline: {
+            color: "green",
+            width: 3  // points
+          }
+        };
+
+        symbolStop.first = symbolStop;  //set start symbol
+        symbolStop.last = symbolStop;   //set end symbol
+
+        // create directions widget
+        let directionsWidget = new Directions({
+          view: view,
+          routeSymbol: symbolRoute,   // add custom route symbol
+          stopSymbols: symbolStop     // add custom stop symbols
+        });
+
+        // Add the Directions widget to the top right corner of the view
+        view.ui.add(directionsWidget, {
+          position: "top-right"
+        });
+      });
+    </script>
+  </head>
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+</body>
+
+</html>
