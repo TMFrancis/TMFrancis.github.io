@@ -3,19 +3,21 @@
 Popup widget
 
  customized the theme using an esri main.css
- customized the title
- customized the content
+ customized the popup title
+ customized the popup content
 
  1st challenge: get Locator to work (not my widget, but needed a reason to popup)
  2nd challenge: 3 conflicting answers for every question about ESRI products
- 3rd challenge: variable scope
- 4th challenge: using css to set popup to set basic popup qualities
+ 3rd challenge: variable scope with params variable
+ 4th challenge: using css to change basic popup attributes
  No 1 disappointment: ArcGIS API seems very complicated
 -->
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
   <title>Lab 7: Popup Widget</title>
+  <!-- next line is where I changed the theme of the popup; a dedicated stylesheet
+    based on one provided by ESRI wasn't effective in adjusting anything -->
   <link rel="stylesheet" href="https://js.arcgis.com/4.21/esri/themes/dark/main.css" />
   <script src="https://js.arcgis.com/4.21/"></script>
   <style>
@@ -42,8 +44,8 @@ Popup widget
   </style>
 
   <script>
-      require(["esri/tasks/Locator",
-              "esri/geometry/Point",
+      require(["esri/tasks/Locator",        // popup content is reverse geocode
+              "esri/geometry/Point",        // added a point at my apartment
               "esri/Map",
               "esri/views/MapView",
               "esri/Graphic",               // why is this
@@ -98,8 +100,8 @@ Popup widget
             title: "The location is: longitude: " + lon + " & latitude:  " + lat + "",
             location: event.mapPoint // Set the location of the popup to the clicked location
           });
-          const params = {
-            location: event.mapPoint
+          const params = {              // variable to pass clicked location
+            location: event.mapPoint    // to the locator task
           };
 
         // Execute a reverse geocode using the clicked location
@@ -121,7 +123,7 @@ Popup widget
 
 <body>
   <div id="viewDiv"></div>
-  <div id="instruction" class="esri-widget">
+  <div id="instruction" class="esri-widget">         <!-- add directions -->
     Click any location on the map to see the address
   </div>
 </body>
