@@ -136,7 +136,7 @@ label {
   padding-left: 500px;
 }
 
-/* copyright update for Lab 3 */
+/* dynamic copyright */
 #copyright {
   position: absolute;
   bottom: 20px;

@@ -1,12 +1,14 @@
 /* Here I create some variables so that we can adjust our color palette easily from one location */
 :root {
-    --primary-color-light: #747474;
-    --primary-color-dark: #1b1b1b;
-    --highlight-color: #eba015;
+    --main-bg-color: #ffffbf;
+    --primary-color-light: #fdae61;
+    --primary-color-dark: #d7191c;
+    --highlight-color: #abd9e9;
     --title-font: copperplate;
     --body-font: helvetica;
   }
-
+/*
 body{
     background-color: var(--primary-color-dark);
 }
+*/
