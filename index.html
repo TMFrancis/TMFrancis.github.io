@@ -7,6 +7,8 @@
       integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
       crossorigin=""/>
     <link rel="stylesheet" type="text/css" href="css/map_style.css">
+    <link rel="stylesheet" type="text/css" href="css/header-styles.css">
+    <link rel="stylesheet" type="text/css" href="css/colors-and-fonts.css">
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
@@ -25,11 +27,25 @@
   </head>
   <body>
     <div id="body-container">
+      <!-- the prompt user for name and write to header
       <div id="header">
+
           <script>
           document.write(welcome());
-          </script>
-      </div>
+        </script>
+      </div>  -->
+      <header>
+        <div class=container>
+            <div class="header">
+                <a href="index.html" class="title">Crash Map</a>
+                <div class="header-right">
+                    <a class="active" href="index.html">Home</a>
+                    <a href="data.html">Data</a>
+                    <a href="about-us.html">About Us</a>
+                </div>
+            </div>
+        </div>
+      </header>
       <div id="profile-picture">
         <img src=images/profile-picture.jpg with=200px height=200px>
         <figcaption>Black Live Matter Ride, Boston 2020</figcaption>
@@ -39,8 +55,7 @@
         I am a student in the
         <a href="https://www.clarku.edu/schools/idce/">IDCE Department</a> at
         <a href="https://www.clarku.edu/">Clark University.</a><br>
-        <a href="Lecture21_mobileAPI.html">Mobile API Map.</a><br>
-      </div>
+              </div>
 
       <div id="research-interests">
         <h3>Research Interests:</h3>
