@@ -1,9 +1,9 @@
 /* Here I create some variables so that we can adjust our color palette easily from one location */
 :root {
-    --main-bg-color: #ffffbf;
-    --primary-color-light: #fdae61;
-    --primary-color-dark: #2c7bb6;
-    --highlight-color: #abd9e9;
+    --main-bg-color: #ffffbf;         /*off white */
+    --primary-color-light: #fdae61;   /* tan */
+    --primary-color-dark: #2c7bb6;    /* blue */
+    --highlight-color: #abd9e9;       /* light blue */
     --title-font: copperplate;
     --body-font: helvetica;
   }

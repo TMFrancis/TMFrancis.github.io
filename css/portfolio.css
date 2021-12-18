@@ -1,6 +1,15 @@
 
 * {font-family: var(--body-font);}
 
+/* body sets styling for page content */
+body {
+  /* set background color to light blue */
+  background-color: #abd9e9;
+  /* set text color to blue */
+  color: #2c7bb6;
+  text-align: center;
+}
+
 #portfolio {display: table;
             width:100%;
             font-size: 0;
@@ -9,7 +18,7 @@
             text-align: center;
           }
 
-#P1, #P2, #P3, #P4 {display: table-cell;
+#portText, #portImg {display: table-cell;
                     position: relative;
                     zoom: 1;
                     vertical-align: top;
@@ -17,12 +26,14 @@
                     height: 300px;
                     margin: 0;
                     padding: 0;}
-#P1 {width: 50%; padding-left: 5%;
-    padding-right: 5%; padding-top: 3%;
-    background:var(--primary-color-dark);}
-#P2 {width: 50%; padding-top: 3%; background:var(--primary-color-dark);}
-#P3 {width: 25%; background:var(--primary-color-dark);}
-#P4 {width: 25%; background:var(--primary-color-dark);}
+#portText {width: 50%;
+          padding-left: 5%;
+          padding-right: 5%;
+          padding-top: 3%;
+          background:var(--main-bg-color);}
+#portImg {width: 50%;
+          padding-top: 3%;
+          background:var(--main-bg-color);}
 
 figcaption {
   font-size: 12px;
@@ -39,13 +50,20 @@ figcaption {
   /* margin: auto; centers body */
   margin: auto;
   /* sets body height to 100% of viewport */
-  height: 100%;
+  height: auto;
   /* sets narrow border to off white */
   border: 2px solid #ffffbf;
   /* rounds edges of border */
-  border-radius: 25px;
-  /* hides content that does not fit in body */
-
+}
+/* dynamic copyright */
+#copyright {
+  position: relative;
+  bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
+  text-align: center;
+  font-family: var(--body-font);
 }
 .title{
    margin-top: 10px;
@@ -56,15 +74,15 @@ figcaption {
    text-align: center;
  }
 
+ .tag{
+   font-size: 17px;
+   text-align: left;
+   color: var(--highlight-color);
+   font-style: italic;
+   font-weight: bold;
+ }
+
  img{
    width: 80%;
    height: auto;
  }
-
-/* dynamic copyright */
-#copyright {
-  position: relative;
-  bottom: -20px;
-  width: 70vw;
-  text-align: center;
-}

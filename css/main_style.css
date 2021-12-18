@@ -7,9 +7,6 @@ Colorbline safe color palatte from colorbrewer2.org.
 #2c7bb6 - blue
 */
 
-/* note to grader: it hurt to move comments from next to each declaration */
-/*                 to above each declaration :( */
-
 /* body sets styling for page content */
 body {
   /* set background color to light blue */
@@ -103,7 +100,7 @@ label {
   /* sets narrow border to off white */
   border: 2px solid #ffffbf;
   /* rounds edges of border */
-  border-radius: 25px;
+  /* border-radius: 25px; */
   /* hides content that does not fit in body */
   overflow: hidden;
 }
@@ -147,10 +144,13 @@ label {
 
 /* dynamic copyright */
 #copyright {
-  position: absolute;
+  position: relative;
   bottom: 20px;
-  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
   text-align: center;
+  font-family: var(--body-font);
 }
 
 #webmap-reviews {
