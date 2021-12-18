@@ -59,6 +59,15 @@ label {
   text-align: right;
 }
 
+.title{
+   margin-top: 10px;
+   width: 100%;
+   font-family: var(--title-font);
+   font-size: 60px;
+   color: var(--highlight-color);
+   text-align: center;
+ }
+
 .button {
     background-color: var(--primary-color-dark);
     border: none;
@@ -150,14 +159,6 @@ label {
   position: relative;
 }
 
-#area_calc {
-  position: relative;
-  text-align: left;
-}
-
-#demo {
-  position: relative;
-  text-align: right;
-  bottom: 100px;
-  right: 40px;
+#container {
+  text-align: center;
 }

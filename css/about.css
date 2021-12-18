@@ -1,0 +1,68 @@
+
+* {font-family: var(--body-font);}
+#container {height: 100%; width:100%; font-size: 0;margin: 0; padding: 0;}
+#P1, #P2, #P3, #P4 {display: inline-in;
+                    position: relative;
+                    zoom: 1;
+                    vertical-align: top;
+                    font-size: 12px;
+                    height: 300px;
+                    margin: 0;
+                    padding: 0;}
+#P1 {width: 25%; background:var(--primary-color-dark);}
+#P2 {width: 25%; background:var(--primary-color-dark);}
+#P3 {width: 25%; background:var(--primary-color-dark);}
+#P4 {width: 25%; background:var(--primary-color-dark);}
+
+figcaption {
+  font-size: 12px;
+  color: var(--primary-color-light);
+  font-style: italic;
+}
+
+/* profile-picture is the unique selector for the photo element */
+#profile-picture {
+  /* positions profile pic to the left */
+  float: left;
+  padding-left: 25px;
+  padding-top: 35px;
+}
+
+/* welcome-text is the unique selector for the 1st block right of profile */
+#welcome-text {
+  /* provides 'white space' above welcome-text */
+  padding-top: 25px;
+  /* sets welcome-text text size */
+  font-size: 20px;
+}
+
+p {
+  color: var(--primary-color-light);
+  text-align: center;
+  font-size: 20px;
+  margin-left: 110px;
+  margin-right: 110px;
+}
+
+h2 {
+  color: var(--highlight-color);
+  font-family: var(--title-font);
+  font-size: 30px;
+}
+
+#container {
+  text-align: center;
+}
+
+.title{
+   margin-top: 10px;
+   width: 100%;
+   font-family: var(--title-font);
+   font-size: 60px;
+   color: var(--highlight-color);
+   text-align: center;
+ }
+
+img{
+  width: 18vw;
+}
