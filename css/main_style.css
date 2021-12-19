@@ -14,8 +14,6 @@ body {
   /* set text color to blue */
   color: #2c7bb6;
   text-align: center;
-  /* sets body height to 100% of viewport */
-  height: 100vh;
 }
 
 figcaption {
@@ -119,13 +117,9 @@ label {
   /* margin: auto; centers body */
   margin: auto;
   /* sets body height to 100% of viewport */
-  height: 90vh;
+  height: auto;
   /* sets narrow border to off white */
   border: 2px solid #ffffbf;
-  /* rounds edges of border */
-  /* border-radius: 25px; */
-  /* hides content that does not fit in body */
-  overflow: hidden;
 }
 
 /* header is the unique selector for the bar across the top of the page */
