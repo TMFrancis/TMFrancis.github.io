@@ -70,7 +70,7 @@ figcaption {
    width: 100%;
    font-family: var(--title-font);
    font-size: 60px;
-   color: var(--highlight-color);
+   color: var(--primary-color-dark);
    text-align: center;
  }
 

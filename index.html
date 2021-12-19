@@ -3,38 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-      crossorigin=""/>
     <link rel="stylesheet" type="text/css" href="css/map_style.css">
     <link rel="stylesheet" type="text/css" href="css/header-styles.css">
     <link rel="stylesheet" type="text/css" href="css/colors-and-fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/main_style.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
 
-    <script src = "javascript/secret_keys.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/opencagedata/leaflet-opencage-search@d4cbd36122efc8d17152b4177ed0e12165305441/dist/css/L.Control.OpenCageData.Search.min.css" />
-
     <script src="https://cdn.jsdelivr.net/gh/opencagedata/leaflet-opencage-search@d4cbd36122efc8d17152b4177ed0e12165305441/dist/js/L.Control.OpenCageSearch.min.js"></script>
 
-    <title>Tom Francis</title>
-    <!-- All styling for this HTML document are contained in this external css
-    file -->
-    <link rel="stylesheet" type="text/css" href="css/main_style.css">
-    <script src = "javascript/external.js"></script>
+    <title>Tom Francis | Home</title>
   </head>
   <body>
     <div id="body-container">
-      <!-- the prompt user for name and write to header
-      <div id="header">
-
-          <script>
-          document.write(welcome());
-        </script>
-      </div>  -->
-      <header>
+        <header>
         <div class=container>
             <div class="header">
                 <a href="index.html">Home</a>
@@ -45,31 +32,24 @@
             </div>
         </div>
       </header>
-      <div id="profile-picture">
-        <img src=images/Clark_IDCE_1-9926_crop.jpg width=200px height=auto>
-        <figcaption>Clark University, Worcester 2021</figcaption>
-      </div>
-      <div id="welcome-text">
-        My name is Tom Francis.<br>
-        I am a student in the
-        <a href="https://www.clarku.edu/schools/idce/">IDCE Department</a> at
-        <a href="https://www.clarku.edu/">Clark University.</a><br>
-              </div>
+        <div style="width: 100%; height: 30%;">
+          <div id="homeImg">
+            <img src=images/Clark_IDCE_1-9926_crop.jpg width=200px height=auto>
+            <figcaption>Clark University, Worcester 2021</figcaption>
+          </div>
+          <div id="homeText">
+              <h1 id="title">Tom Francis</h1>
+              <figcaption class="tagline">GIS and Urban Geography</figcaption><br>
+              I am a geospatial data analyst with experience in the petroleum and
+              transportation sectors. My concentration at Clark University is remotely
+              sensed spatial data and I enjoy incorporating economic and
+              financial data into my analyses. I am interested in the built environment,
+              sustainable systems and climate change.<br>
+          </div>
+        </div>
 
-      <div id="research-interests">
-        <h3>Research Interests:</h3>
-        <ol>
-          <script src = "javascript/researchTable.js"></script>
-        </ol>
-      </div>
-
-      <div id="webmap-reviews">
-        <h3 style = "text-align: center;">Webmap Reviews</h3>
-        <script>webmap_table()</script>
-      </div>
-
-      <h3>Seven Wonders of the World Webmap</h3>
-        <div id="mapid" style="width: 600px; height: 300px; margin: auto;">
+      <h3>Lastest Project: Vision Zero Crash Map</h3>
+        <div id="mapid" style="width: 800px; height: 400px; margin: auto;">
           <script src = "javascript/map_sevenwonders.js"></script>
         </div>
     </div>

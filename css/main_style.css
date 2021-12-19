@@ -56,12 +56,35 @@ label {
   text-align: right;
 }
 
-.title{
-   margin-top: 10px;
-   width: 100%;
-   font-family: var(--title-font);
-   font-size: 60px;
-   color: var(--highlight-color);
+#homeText, #homeImg {position: relative;
+                      zoom: 1;
+                      vertical-align: top;
+                      font-size: 20px;
+                      height: 300px;
+                      margin: 0;
+                      padding: 0;}
+#homeImg {width: 25%;
+          float: left;
+          padding-left: 5%;
+          padding-top: 3%;
+          background:var(--main-bg-color);}
+#homeText {width: 60%;
+          float: right;
+          text-align: justify;
+          padding-left: 5%;
+          padding-right: 5%;
+          padding-top: 3%;
+          background:var(--main-bg-color);}
+
+#title{
+  margin-top: 10px;
+  font-family: var(--title-font);
+  font-size: 60px;
+  color: var(--primary-color-dark);
+  text-align: center;
+}
+
+ .tagline{
    text-align: center;
  }
 
@@ -125,21 +148,7 @@ label {
   padding-top: 25px;
   /* sets welcome-text text size */
   font-size: 20px;
-}
-
-/* unique selector for the 2nd block to the right of profile pic */
-#research-interests {
-  /* prevents staggered list elements */
-  text-align: left;
-  /* matches welcome-text text size */
-  font-size: 15px;
-  /* prevents overlap of elements */
-  position: relative;
-  /* 120px  - aligns text horizontally with welcome-text ;
-  did not work with Safari*/
-  /* left: 120px; */
-  /* aligns test with welcome-text - works w Chrome & Safari */
-  padding-left: 500px;
+  text-align: center;
 }
 
 /* dynamic copyright */
@@ -151,12 +160,6 @@ label {
   width: 8em;
   text-align: center;
   font-family: var(--body-font);
-}
-
-#webmap-reviews {
-  text-align: left;
-  font-size: 15px;
-  position: relative;
 }
 
 #container {
