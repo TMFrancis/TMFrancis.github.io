@@ -1,0 +1,8 @@
+:root {
+    --main-bg-color: #ffffbf;         /*off white */
+    --primary-color-light: #fdae61;   /* tan */
+    --primary-color-dark: #2c7bb6;    /* blue */
+    --highlight-color: #abd9e9;       /* light blue */
+    --title-font: copperplate;
+    --body-font: helvetica;
+  }

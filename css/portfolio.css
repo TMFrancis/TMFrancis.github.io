@@ -4,9 +4,9 @@
 /* body sets styling for page content */
 body {
   /* set background color to light blue */
-  background-color: #abd9e9;
+  background-color: #cffce6;        /* hard code to --highlight-color */
   /* set text color to blue */
-  color: #2c7bb6;
+  color: #5c6e58;                   /* hard code to --primary-color-dark */
   text-align: center;
 }
 
@@ -44,7 +44,7 @@ figcaption {
 /* body-content is unique selector for most of the webpage content */
 #body-container {
   /* set background color to off white */
-  background-color: #ffffbf;
+  background-color: #8aa899;            /* hard code to --main-bg-color */
   /* insures body is narrower than most desktop computer screens*/
   max-width: 1000px;
   /* margin: auto; centers body */
@@ -52,7 +52,7 @@ figcaption {
   /* sets body height to 100% of viewport */
   height: auto;
   /* sets narrow border to off white */
-  border: 2px solid #ffffbf;
+  border: 2px solid #8aa899;            /* hard code to --main-bg-color */
 }
 /* dynamic copyright */
 #copyright {
@@ -76,7 +76,7 @@ figcaption {
  .tag{
    font-size: 17px;
    text-align: left;
-   color: var(--highlight-color);
+   color: var(--primary-color-light);
    font-style: italic;
    font-weight: bold;
  }

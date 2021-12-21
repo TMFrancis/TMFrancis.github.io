@@ -1,5 +1,29 @@
 
 * {font-family: var(--body-font);}
+/* body-content is unique selector for most of the webpage content */
+#body-container {
+  /* set background color to off white */
+  background-color: #8aa899;
+  /* insures body is narrower than most desktop computer screens*/
+  max-width: 1000px;
+  /* margin: auto; centers body */
+  margin: auto;
+  /* sets body height to 100% of viewport */
+  height: auto;
+  /* sets narrow border to off white */
+  border: 2px solid #8aa899;
+}
+
+/* body sets styling for page content */
+body {
+  /* set background color to light blue */
+  background-color: #cffce6;
+  /* set text color to blue */
+  color: #5c6e58;
+  text-align: center;
+}
+
+
 #container {height: 100%; width:100%; font-size: 0;margin: 0; padding: 0;}
 
 #about {display: table;
@@ -27,7 +51,7 @@
 
 figcaption {
   font-size: 12px;
-  color: var(--primary-color-light);
+  color: var(--primary-color-dark);
   font-style: italic;
   text-align: center;
 }
@@ -55,4 +79,15 @@ figcaption {
 
 img{
   width: 18vw;
+}
+
+/* dynamic copyright */
+#copyright {
+  position: relative;
+  bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
+  text-align: center;
+  font-family: var(--body-font);
 }
