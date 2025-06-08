@@ -23,10 +23,56 @@
         Select Recent Projects
       </div>
       <div id="portfolio">
+        <!-- start census map project-->
+        <div style="display: table-row; height: 50%;">
+          <div id="portText"><h2>R and US Census Data</h2>
+              <p style="text-align: left">R is well established for data science 
+              for good reason: data handling is better than Excel or GIS packages,
+              and the code clearly documents data access and processing. R is 
+              great for spatial analyses too. With R libraries, US Census data 
+              is downloaded with geometries and visualized with basemaps.</p>
+              <p style="text-align: left">The map at right was created using Open
+              Source software and US Census data published by the Department of 
+              Commerce. More specifically, RStudio and the R libraries 
+              tidycensus, tigris, sf, and tmap. </p>
+              <p class="tag">#R #tidycensus #demographics</p>
+          </div>
+          <div id="portImg">
+            <!-- link image to url <a href="https://arcg.is/1z54nW0" target="_blank">> -->
+            <img src="images/CarAccess_Camberville.png"></a>
+          </div>
+        </div>
+        <!-- end census map project-->
+        <!-- start raster project-->
+        <div style="display: table-row; height: 50%;">
+          <div id="portText"><h2>Highlight Vegetation using R</h2>
+              <p style="text-align: left">Most people are familiar with satellite 
+              data from using Google maps. Those maps utilize data from visible-spectrum 
+              sensors, but many satellites capture a much wider range of data. The False 
+              Color Composite (FCC) at right uses data that the human eye can’t see to highlight 
+              healthy vegetation in Cambridge and Somerville, MA. </p>
+              <p style="text-align: left">Here, I’ve dropped the blue band and reassigned 
+              colors to the red, green, and near-infrared bands. The result visualizes 
+              healthy vegetation in bright red; water is black; paved areas in shades of green. 
+              The maps highlights the ample canopy cover in West Cambridge, the Tip O’Neill Golf 
+              Course and Alewife Brook Reservation in red, and Fresh Pond in black.</p>
+              <p style="text-align: left">The image uses Sentinel-2 data from May 2025. The 
+              terra package in R makes it easy to manipulate Sentinel-2’s 13 bands or create 
+              normalized difference indices. A normalized difference index can be reclassed 
+              to measure acres of wooded land.</p>
+              <p class="tag">#R #raster #terra #Sentinel-2</p>
+          </div>
+          <div id="portImg">
+            <!-- link image to url <a href="https://arcg.is/1z54nW0" target="_blank">> -->
+            <img src="images/FCC_Camberville.png"></a>
+          </div>
+        </div>
+        <!-- end raster project--> 
+        <!-- start VZ project -->
         <div style="display: table-row; height: 50%;">
           <div id="portText"><h2>Vision Zero Crash Map</h2>
-            <p style="text-align: left">The
-              <a href="https://www.visionzerocoalition.org/" target="_blank">
+              <p style="text-align: left">The
+              <a href="https://www.visionzerocoalition.org" target="_blank">
               Massachusetts Vision Zero Coalition</a> tracks traffic fatalities
               for vulnerable roadway users as part of their advocacy for safer
               roadways. When the data outgrew their current visualization, our
@@ -40,7 +86,8 @@
             <img src="images/crashmap.jpg"></a>
           </div>
         </div>
-        <!-- second row -->
+        <!-- end VZ project -->
+        <!-- start SLR project -->
         <div style="display: table-row; height: 50%;">
           <div id="portText"><h2>Sea Level Rise and Ground Water Table</h2>
             <p style="text-align: left">On Cape Cod, fresh ground water 'floats'
@@ -62,7 +109,7 @@
             <img src="images/layout-gw-inundated-ss_orig.jpeg">
           </div>
         </div>
-        <!-- end second row -->
+        <!-- end SLR project -->
         <div style="display: table-row; height: 50%;">
           <div id="portText"><h2>COVID-19 and Night Lights</h2>
             <p style="text-align: left">Was COVID-19 visible from space? Using
