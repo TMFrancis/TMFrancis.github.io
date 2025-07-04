@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tom Francis | Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/header-styles.css">
+    <link rel="stylesheet" type="text/css" href="css/colors-and-fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+  </head>
+  <body>
+    <div id="body-container">
+      <header>
+          <div class="header">
+              <a href="index.html">Home</a>
+              <div class="header-right">
+                  <a href="portfolio.html">My Portfolio</a>
+                  <a href="about.html">About Me</a>
+              </div>
+          </div>
+      </header>
+      <div class="title">
+        Select Recent Projects
+      </div>
+      <div id="portfolio">
+        <!-- start census map project-->
+        <div style="display: table-row; height: 50%;">
+          <div id="portText"><h2>R and US Census Data</h2>
+              <p style="text-align: left">R is well established for data science 
+              for good reason: data handling is better than Excel or GIS packages,
+              and the code clearly documents data access and processing. R is 
+              great for spatial analyses too. With R libraries, US Census data 
+              is downloaded with geometries and visualized with basemaps.</p>
+              <p style="text-align: left">The map at right was created using Open
+              Source software and US Census data published by the Department of 
+              Commerce. More specifically, RStudio and the R libraries 
+              tidycensus, tigris, sf, and tmap. </p>
+              <p class="tag">#R #tidycensus #demographics</p>
+          </div>
+          <div id="portImg">
+            <!-- link image to url <a href="https://arcg.is/1z54nW0" target="_blank">> -->
+            <img src="images/CarAccess_Cville_2023.png"></a>
+          </div>
+        </div>
+        <!-- end census map project-->
+        <!-- start raster project-->
+        <div style="display: table-row; height: 50%;">
+          <div id="portText"><h2>Highlight Vegetation using R</h2>
+              <p style="text-align: left">Most people are familiar with satellite 
+              data from using Google maps. Those maps utilize data from visible-spectrum 
+              sensors, but many satellites capture a much wider range of data. The False 
+              Color Composite (FCC) at right uses data that the human eye can’t see to highlight 
+              healthy vegetation in Cambridge and Somerville, MA. </p>
+              <p style="text-align: left">Here, I’ve dropped the blue band and reassigned 
+              colors to the red, green, and near-infrared bands. The result visualizes 
+              healthy vegetation in bright red; water is black; paved areas in shades of green. 
+              The maps highlights the ample canopy cover in West Cambridge, the Tip O’Neill Golf 
+              Course and Alewife Brook Reservation in red, and Fresh Pond in black.</p>
+              <p style="text-align: left">The image uses Sentinel-2 data from May 2025. The 
+              terra package in R makes it easy to manipulate Sentinel-2’s 13 bands or create 
+              normalized difference indices. A normalized difference index can be reclassed 
+              to measure acres of wooded land.</p>
+              <p class="tag">#R #raster #terra #Sentinel-2</p>
+          </div>
+          <div id="portImg">
+            <!-- link image to url <a href="https://arcg.is/1z54nW0" target="_blank">> -->
+            <img src="images/FCC_Camberville.png"></a>
+          </div>
+        </div>
+        <!-- end raster project--> 
+        <!-- start VZ project -->
+        <div style="display: table-row; height: 50%;">
+          <div id="portText"><h2>Vision Zero Crash Map</h2>
+              <p style="text-align: left">The
+              <a href="https://www.visionzerocoalition.org" target="_blank">
+              Massachusetts Vision Zero Coalition</a> tracks traffic fatalities
+              for vulnerable roadway users as part of their advocacy for safer
+              roadways. When the data outgrew their current visualization, our
+              team of students developed this Leaflet based webmap with improved
+              aesthetics and functionality. Click on the image at right for
+              details in a StoryMap format.</p>
+              <p class="tag">#Leaflet #HTML #JavaScript #CSS</p>
+          </div>
+          <div id="portImg">
+            <a href="https://arcg.is/1z54nW0" target="_blank">
+            <img src="images/crashmap.jpg"></a>
+          </div>
+        </div>
+        <!-- end VZ project -->
+        <!-- start SLR project -->
+        <div style="display: table-row; height: 50%;">
+          <div id="portText"><h2>Sea Level Rise and Ground Water Table</h2>
+            <p style="text-align: left">On Cape Cod, fresh ground water 'floats'
+              on an underlying bed of sea water. As sea levels rise, so does the
+              ground water that many coastal communities depend on for well water.
+              We modeled ground water levels based on a 2015 survey of wells and
+              septic systems in Wellfleet, MA. Among our findings: six feet of
+              sea level rise will cause septic systems in 78 homes will to cease
+              operating properly due to ground water incursion. Separately, 65
+              wells will be inundated by sea water. A
+              <a href="https://tidesandcurrents.noaa.gov/publications/techrpt83_Global_and_Regional_SLR_Scenarios_for_the_US_final.pdf" target="_blank">
+              2017 NOAA report</a> estimates a 15% probability that sea level
+              rise on Cape Cod will exceed four feet by 2050 and less than 1%
+              probability that it will exceed ten feet by 2100. Our analysis is
+              based on a six foot sea level rise.</p>
+              <p class="tag">#ClimateChange #ArcGISPro</p>
+          </div>
+          <div id="portImg">
+            <img src="images/layout-gw-inundated-ss_orig.jpeg">
+          </div>
+        </div>
+        <!-- end SLR project -->
+        <div style="display: table-row; height: 50%;">
+          <div id="portText"><h2>COVID-19 and Night Lights</h2>
+            <p style="text-align: left">Was COVID-19 visible from space? Using
+              Google Earth Engine Code to analyze night time luminosity captured
+              by satellite, the impact of COVID-19 restrictions for Massachusetts
+              and Florida are contrasted. The surprise finding was that land use
+              had more influence on changes than state mandated restrictions.
+              Click on the image at right for details in a StoryMap format.</p>
+              <p class="tag">#GoogleEarthEngineCode #ArcGISPro #COVID19</p>
+          </div>
+          <div id="portImg">
+            <a href="https://storymaps.arcgis.com/stories/c8bb9b9be3ec4fe0aa1d4c54268d214b" target="_blank">
+            <img src="images/ma-aos-4020w_1.jpeg"></a>
+          </div>
+      </div>
+      <div style="display: table-row; height: 50%;">
+        <div id="portText"><h2>Identifying Ships at Sea Using R</h2>
+          <p style="text-align: left">cargocounts is an R package which uses
+            freely available satellite imagery to identify latitude and longitude
+            coordinates of ships at sea. Sentinel-2 data is uploaded as a tif
+            file and processed as a raster image to produce a vector image of
+            ship locations and coordinates with 95% accuracy. Click on the image
+            at right for details in a StoryMap format.</p>
+            <p class="tag">#RStudio #GitHub #MachineLearning</p>
+        </div>
+        <div id="portImg">
+          <a href="https://storymaps.arcgis.com/stories/0375d27cee4a4efa9f05b871d93a7218" target="_blank">
+          <img src="images/both-img_2.png"></a>
+        </div>
+      </div>
+      <!-- second row -->
+      <div style="display: table-row; height: 50%;">
+        <div id="portText"><h2>GOP Gains Among Latino Voters in 2020</h2>
+          <p style="text-align: left">In the 2020 Presidential election, counties
+            with large Latino populations demonstrated consequential increases in
+            support for the GOP. These gains undermined the increased support
+            Democrats had won among moderate and suburban voters, contributed to
+            GOP wins in key battleground states, including Texas and Florida,
+            and resulted in a closer election than Democrats had hoped. </p>
+          <p style="text-align: left">We analyzed 50 independent variables
+            across age, race and ethnicity, education, income, employment,
+            healthcare access, and access to technology at the state and county
+            level for the ten states with the largest Latino populations. Our
+            findings indicate that demographic variables are associated with the
+            vote change in the West and Southwest states, and socioeconomic
+            variables are associated with the vote change in the Eastern states.
+            The difference highlights the heterogeneity of the vote in important
+            Latino states, and makes clear that political parties cannot use a
+            single strategy for Latino outreach.</p>
+            <p class="tag">#SPSS #ArcGISPro #AmericanCommunitySurvey</p>
+        </div>
+        <div id="portImg">
+          <img src="images/10statevote.png">
+        </div>
+      </div>
+      <!-- end second row -->
+      <div style="display: table-row; height: 50%;">
+        <div id="portText"><h2>Strava Heat Map</h2>
+          <p style="text-align: left">This style of heat map overlays five years of
+            bicycle rides to show which routes are most heavily used. GPS trackers
+            record a way point about every second. To visualize this data, roughly
+            15 million waypoints were processed into 2,600 polylines. Select
+            attributes for each ride were uploaded and associated with the ride
+            coordinates to create a flexible illustration of how riding habits
+            changed over the period.  All the processing was completed using ArcPy
+            module in ArcGIS Pro.</p>
+            <p class="tag">#ArcGISPro #ArcPy #GPS</p>
+        </div>
+        <div id="portImg">
+          <img src="images/stravaheatmap1520_1.png">
+        </div>
+      </div>
+      <div style="display: table-row; height: 50%;">
+        <div id="portText"><h2>MassDOT Crash Database Accuracy</h2>
+          <p style="text-align: left">MassDOT's Crash 2016 data set includes over
+            143,000 roadway crashes. The data is anonymized, which is appropriate,
+            but which also makes accuracy assessment difficult. An independently
+            compiled set of roadway fatalities is used to measure error rates in the
+            Crash dataset. Click on the image at right for details in a StoryMap
+            format. </p>
+            <p class="tag">#ArcMap #Vector #MassGIS</p>
+        </div>
+        <div id="portImg">
+          <a href="https://storymaps.arcgis.com/stories/460fee653a1146fe8fa082d316af5a1b" target="_blank">
+          <img src="images/MassDOT.png"></a>
+        </div>
+      </div>
+      <div style="display: table-row; height: 50%;">
+        <div id="portText"><h2>Canadian Oil Sands 2014-2020</h2>
+          <p style="text-align: left">Oil Sands mines tend to be owned and operated
+            by large conglomerates. As part of a much larger organization, production
+            volumes and operational details fall below the threshold for regulatory
+            filings. In this analysis, I use satellite imagery to measure changes in
+            mine footprints since the price of oil collapsed in 2014. Click on the
+            image at right for details in a StoryMap format. </p>
+            <p class="tag">#TerrSet #Raster #StrandedAssets</p>
+        </div>
+        <div id="portImg">
+          <a href="https://storymaps.arcgis.com/stories/8e633460e8b3495d87fc66a8e3709649" target="_blank">
+          <img src="images/oilsands.png"></a>
+        </div>
+      </div>
+      <!-- duplicate content from Canadian Oil Sands Project
+      <div style="display: table-row; height: 50%;">
+        <div id="portText"><h2>Analyzing mine operations</h2>
+          <p style="text-align: left">This image is a false color composite of Landsat
+            8 bands 4, 5 & 6. It was assembled using Google Earth Engine to mosaic
+            multiple satellite paths and rows and to remove clouds. It will be used
+            to compare changes in operational footprint of oils sands mining since
+            the 2014 collapse of oil prices. By using part of the visible spectrum
+            and sections of the near infrared spectrum - which are not visible to
+            humans - areas of open mine and tailing ponds are easily differentiated
+            from the surrounding boreal grasslands.</p>
+            <p class="tag">#TerrSet #Raster</p>
+        </div>
+        <div id="portImg">
+          <img src="images/mine.png">
+        </div>
+      </div> -->
+      <div style="display: table-row; height: 50%;">
+        <div id="portText"><h2>Tracking Oil & Gas Reserves</h2>
+          <p style="text-align: left">The Carbon Underground is an annual report
+            detailing the potential carbon emissions associated with existing oil,
+            gas and coal reserves. Reserves are the fossil fuel industry's inventory:
+            hydrocarbon deposits that companies own but have not yet been extracted.
+            I provided the commentary and underlying research for several editions of
+            the Carbon Underground's Oil and Gas sections.</p>
+          <p style="text-align: left">The Carbon Underground is produced by Fossil
+            Free Indexes. While working with Fossil Free Indexes, I maintained the
+            Oil & Gas 100 and developed the Tar Sands 20: lists of publicly traded
+            companies holding the largest fossil fuel reserves. The lists were
+            updated on quarterly and provided a basis for fossil fuel divested
+            investment products.</p>
+          <p class="tag">#Financials #ClimateChange #StrandedAssets</p>
+        </div>
+        <div id="portImg">
+          <img src="images/cu200_orig.png"style="padding-bottom: 25px;">
+        </div>
+      </div>
+    </div>      <!-- id="portfolio" -->
+    </div>        <!-- body-container -->
+
+  <footer id="copyright">
+      <script src = "javascript/copyright.js"></script>
+  </footer>
+  </body>
+</html>
